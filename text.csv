@@ -1,0 +1,16 @@
+Atividade,Precedência,Duração Otimista,Duração Mais Provável,Duração Pessimista,Te (tempo esperado),V (Variância),,,,,Resposta,,,,,,
+Início,,0,0,0,"0,000","0,00",,,,,E),Duração do projeto considerando variância,,,,,
+A,Início,28,32,36,"32,000","1,78",,Somatória Caminho Crítico,"99,0",,,,,,,"105,6",
+B,Início,22,28,32,"27,667","2,78",,Somatória da Variância do Caminho Crítico,"43,9",,,,,,,,
+C,A,26,36,46,"36,000","11,11",,Desvio Padrão da Variância,"6,6",,F),Quais atividades:,,,,,
+D,B,14,16,18,"16,000","0,44",,,,,,Possuem folga,,,,A;C;D;E;G;H;I,
+E,B,32,32,32,"32,000","0,00",,,,,,Menor Folga,,,,D;G;I,
+F,B,40,52,74,"53,667","32,11",,,,,,Maior,,,,H,
+G,D,12,16,24,"16,667","4,00",,,"92,4",,,,,,,,
+H,"E,G",16,20,26,"20,333","2,78",,,"99,0",,Caminhos,,,"4,667",,,
+I,"G,E",26,34,42,"34,000","7,11",,,"105,6",,1,,Início;A;C;J;FIM,,,"85,667",
+J,"C,F",12,16,30,"17,667","9,00",,,,,2,,Início;B;D;G;H;FIM,,,"80,667",
+Fim,"H,I,J",0,0,0,"0,000","0,00",,,,,3,,Início;B;D;G;I;FIM,,,"94,333",Maior caminho depois do crítico
+,,,,,,,,,,,4,,Início;B;E;H;FIM,,,"80,000",Menor caminho
+,,,,,,,,,,,5,,Início;B;E;I;FIM,,,"93,667",
+,,,,,,,,,,,6,,Início;B;F;J;FIM,,,"99,000",Caminho Crítico
